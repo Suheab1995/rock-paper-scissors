@@ -39,11 +39,14 @@ jobs:
       
       - name: Step 5 - Download Artifacts
         uses: actions/download-artifact@v3
+        run: mkdir artifactsdownloaded
         with:
           name: my-artifact
+          path: artifactsdownloaded
     
       - name: Display structure of downloaded files
         run: ls -R
+        working-directory: artifactsdownloaded
   
         
 
