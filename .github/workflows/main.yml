@@ -31,11 +31,13 @@ jobs:
        
       - name: List the current directory
         run: ls -a
-      - name: What is there in the target folder
+      - name: What is there in the target folder ?
         run: |
           cd target
           ls -a
-
+      - name: Perform maven test
+        run: mvn test
+        
 
           
           
