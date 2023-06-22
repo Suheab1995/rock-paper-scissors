@@ -1,0 +1,27 @@
+name: Workflow1A
+
+on:
+  workflow_dispatch: 
+  
+jobs:
+
+  Workflow1A:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Checkout main branch from GitHub 
+        uses: actions/checkout@v2
+      - name: Run Script
+        run: echo "hello worlld"
+        
+
+
+          
+          
+          
+
+
+
+
+
+
+
