@@ -18,3 +18,6 @@ jobs:
       - name: Run Script
         run: echo "hello worlld"
         
+  Workflow2A:
+     uses: Suheab1995/rock-paper-scissors/.github/workflows/Workflow2A.yml@master
+        
