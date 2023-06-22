@@ -11,6 +11,7 @@ jobs:
     uses: Suheab1995/rock-paper-scissors/.github/workflows/Workflow1C.yml@master
 
   Workflow1A:
+    needs: [ Workflow1B, Workflow1C ]
     runs-on: ubuntu-latest
     steps:
       - name: Step 1 - Checkout main branch from GitHub 
@@ -19,5 +20,6 @@ jobs:
         run: echo "hello worlld"
         
   Workflow2A:
+     needs: [ Workflow1B, Workflow1C ]
      uses: Suheab1995/rock-paper-scissors/.github/workflows/Workflow2A.yml@master
         
