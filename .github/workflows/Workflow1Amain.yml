@@ -1,0 +1,19 @@
+name: Workflow1A
+
+on:
+  workflow_dispatch: 
+  
+jobs:
+  Workflow1B:
+    uses: rock-paper-scissors/.github/workflows/Workflow1B.yml@main
+  Workflow1C:
+    uses: rock-paper-scissors/.github/workflows/Workflow1C.yml@main
+
+  Workflow1A:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Checkout main branch from GitHub 
+        uses: actions/checkout@v2
+      - name: Run Script
+        run: echo "hello worlld"
+        
