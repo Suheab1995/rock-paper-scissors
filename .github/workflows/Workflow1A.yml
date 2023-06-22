@@ -5,9 +5,9 @@ on:
   
 jobs:
   Workflow1B:
-    uses: rock-paper-scissors/.github/workflows/Workflow1B@main
+    uses: rock-paper-scissors/.github/workflows/Workflow1B.yml@main
   Workflow1C:
-    uses: rock-paper-scissors/.github/workflows/Workflow1C@main
+    uses: rock-paper-scissors/.github/workflows/Workflow1C.yml@main
 
   Workflow1A:
     runs-on: ubuntu-latest
