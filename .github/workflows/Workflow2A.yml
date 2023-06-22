@@ -2,9 +2,12 @@ name: Workflow2A
 
 on:
   workflow_dispatch: 
-  
+  workflow_call: 
 jobs:
-
+  Worflow2B:
+    uses: Suheab1995/rock-paper-scissors/.github/workflows/Workflow2B.yml@master
+  Workflow2C:
+    uses: Suheab1995/rock-paper-scissors/.github/workflows/Workflow2C.yml@master
   Workflow2A:
     runs-on: ubuntu-latest
     steps:
